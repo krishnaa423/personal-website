@@ -97,7 +97,8 @@ h1 {
 .quick-links,
 .filters,
 .link-list,
-.notes {
+.notes,
+.contact {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -106,6 +107,7 @@ h1 {
 .quick-links a,
 .link-list a,
 .notes a,
+.contact a,
 .project a,
 .filters button {
   min-height: 38px;
@@ -199,11 +201,13 @@ h2 {
   line-height: 1.45;
 }
 
-.notes {
+.notes,
+.contact {
   align-items: center;
 }
 
-.notes h2 {
+.notes h2,
+.contact h2 {
   flex-basis: 100%;
 }
 
