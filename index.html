@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Srikrishnaa Vadivel | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#">Srikrishnaa Vadivel</a>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#resumes">Resumes</a>
+      <a href="#notes">Notes</a>
+      <a href="#experience">Experience</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <canvas id="field" aria-label="animated computational field"></canvas>
+      <div class="hero-copy">
+        <h1>Computational physics, embedded systems, and scientific ML.</h1>
+        <p>Yale EE PhD researcher with Cornell ECE training and industry work across CUDA/OpenGL waveform tools, FPGA/MCU sensor logging, HPC simulation, and machine-learning models for molecular systems.</p>
+        <div class="quick-links">
+          <a href="../resume/software/main.tex">Software resume</a>
+          <a href="../resume/comp_physics/main.tex">Computational physics resume</a>
+          <a href="../cs/cs_theory/main.tex">CS/ML notes</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="overview">
+      <div>
+        <span class="metric">2021-present</span>
+        <span>Yale PhD, first-principles exciton calculations on HPC systems</span>
+      </div>
+      <div>
+        <span class="metric">2019-2021</span>
+        <span>Probe Technologies / Weatherford software and embedded engineering</span>
+      </div>
+      <div>
+        <span class="metric">Cornell ECE</span>
+        <span>BA 2013-2017, MEng 2017-2018</span>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-head">
+        <h2>Portfolio Projects</h2>
+        <div class="filters" role="list" aria-label="project filters">
+          <button class="active" data-filter="all">All</button>
+          <button data-filter="physics">Physics</button>
+          <button data-filter="ml">ML</button>
+          <button data-filter="embedded">Embedded</button>
+          <button data-filter="robotics">Robotics</button>
+        </div>
+      </div>
+      <div class="project-grid">
+        <article class="project" data-tags="physics">
+          <h3>DOLFINx PDE Gallery</h3>
+          <p>Weak forms for Poisson, heat, and elasticity with solver and PyVista visualization scaffold.</p>
+          <a href="../physics/dolfinx/README.md">README</a>
+        </article>
+        <article class="project" data-tags="physics">
+          <h3>Meep Ring Resonator</h3>
+          <p>FDTD simulation setup for a ring resonator side-coupled to a waveguide.</p>
+          <a href="../physics/meep_ring_resonator/README.md">README</a>
+        </article>
+        <article class="project" data-tags="physics ml">
+          <h3>First-Principles LiF</h3>
+          <p>Plane-wave Hamiltonian scaffold and band plotting for DFT-style workflows.</p>
+          <a href="../physics/first_principles_lif/README.md">README</a>
+        </article>
+        <article class="project" data-tags="ml">
+          <h3>EGNN QM9 Force Model</h3>
+          <p>PyTorch equivariant message-passing model with force-loss training loop.</p>
+          <a href="../cs/egnn_qm9/README.md">README</a>
+        </article>
+        <article class="project" data-tags="embedded">
+          <h3>MIPS Processor</h3>
+          <p>Single-cycle Verilog CPU with Icarus Verilog self-checking test bench.</p>
+          <a href="../ee/mips_processor/README.md">README</a>
+        </article>
+        <article class="project" data-tags="embedded ml">
+          <h3>Matrix-Multiply Accelerator</h3>
+          <p>Tiny signed integer accelerator block with start/done control.</p>
+          <a href="../ee/ai_accelerator/README.md">README</a>
+        </article>
+        <article class="project" data-tags="robotics">
+          <h3>ROS 2 TurtleBot Simulation</h3>
+          <p>Docker-oriented Nav2/Gazebo plan with trajectory analysis fallback.</p>
+          <a href="../cs/ros2_turtlebot_sim/README.md">README</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="resumes" class="section split">
+      <div>
+        <h2>Resume Variants</h2>
+        <p>Targeted LaTeX resumes for software, ML, embedded systems, computational physics, and EE roles.</p>
+      </div>
+      <div class="link-list">
+        <a href="../resume/software/main.tex">Software</a>
+        <a href="../resume/ml/main.tex">Machine learning</a>
+        <a href="../resume/embedded/main.tex">Embedded systems</a>
+        <a href="../resume/comp_physics/main.tex">Computational physics</a>
+        <a href="../resume/ee/main.tex">Electrical engineering</a>
+      </div>
+    </section>
+
+    <section id="notes" class="section notes">
+      <h2>Theory Notes</h2>
+      <a href="../cs/cs_theory/main.tex">Computer science and ML</a>
+      <a href="../math/math_theory/main.tex">Mathematics</a>
+      <a href="../physics/physics_theory/main.tex">Physics</a>
+      <a href="../ee/ee_theory/main.tex">Electrical engineering</a>
+    </section>
+
+    <section id="experience" class="section timeline">
+      <h2>Experience</h2>
+      <div><strong>Yale University</strong><span>PhD research in first-principles self-trapped excitons, HPC workflows, scientific ML, and embedded systems teaching.</span></div>
+      <div><strong>Probe Technologies / Weatherford</strong><span>ASP/database software, CUDA/OpenGL acoustic logging visualization, C8051 firmware, and Lattice FPGA sensor logging.</span></div>
+      <div><strong>FindLight</strong><span>Photonics writing for technical audiences.</span></div>
+      <div><strong>Cornell University</strong><span>BA and MEng in Electrical and Computer Engineering; embedded robotic hand project published in Circuit Cellar.</span></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
