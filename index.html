@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Srikrishnaa Vadivel | Portfolio</title>
+  <title>Krishnaa Vadivel | Research and Engineering Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="topbar">
-    <a class="brand" href="#">Srikrishnaa Vadivel</a>
+    <a class="brand" href="#">Krishnaa Vadivel</a>
     <nav>
       <a href="#projects">Projects</a>
       <a href="#resumes">Resumes</a>
@@ -22,13 +22,13 @@
     <section class="hero">
       <canvas id="field" aria-label="animated computational field"></canvas>
       <div class="hero-copy">
-        <h1>Computational physics, embedded systems, and scientific ML.</h1>
-        <p>Yale EE PhD researcher with Cornell ECE training and industry work across CUDA/OpenGL waveform tools, FPGA/MCU sensor logging, HPC simulation, and machine-learning models for molecular systems.</p>
+        <h1>Computational physics, electrical engineering, embedded systems, and scientific ML.</h1>
+        <p>Yale ECE PhD researcher with Cornell ECE training and industry experience across first-principles materials modeling, semiconductor simulation, CUDA/OpenGL engineering tools, FPGA and MCU systems, and machine-learning workflows for molecular and scientific computing.</p>
         <div class="quick-links">
-          <a href="https://github.com/krishnaa423/industry-resume/blob/main/software/main.pdf">Software resume</a>
-          <a href="https://github.com/krishnaa423/industry-resume/blob/main/comp_physics/main.pdf">Computational physics resume</a>
-          <a href="https://github.com/krishnaa423/industry-cs-theory/blob/main/main.pdf">CS/ML notes</a>
-          <a href="mailto:srikrishnaacareers@gmail.com">Email</a>
+          <a href="https://github.com/krishnaa423/resume-cv/blob/main/master/resume/main.pdf">Master resume</a>
+          <a href="https://github.com/krishnaa423/resume-cv/blob/main/master/cv/main.pdf">Master CV</a>
+          <a href="https://github.com/krishnaa423/physics-theory-notes/blob/main/main.pdf">Physics theory notes</a>
+          <a href="mailto:srikrishnaa.careers@gmail.com">Email</a>
           <a href="https://github.com/krishnaa423">GitHub</a>
         </div>
       </div>
@@ -37,15 +37,15 @@
     <section class="overview">
       <div>
         <span class="metric">2021-present</span>
-        <span>Yale PhD, MS, and MPhil in ECE with first-principles exciton calculations on HPC systems</span>
+        <span>Yale PhD, MS, and MPhil in ECE with first-principles exciton research, many-body theory, and distributed HPC workflows</span>
       </div>
       <div>
         <span class="metric">2019-2021</span>
-        <span>Probe Technologies / Weatherford software and embedded engineering</span>
+        <span>Probe Technologies / Weatherford software, embedded, and instrumentation engineering</span>
       </div>
       <div>
         <span class="metric">Cornell ECE</span>
-        <span>BA 2013-2017, MEng 2017-2018</span>
+        <span>BS 2013-2017, MEng 2017-2018</span>
       </div>
     </section>
 
@@ -56,83 +56,106 @@
           <button class="active" data-filter="all">All</button>
           <button data-filter="physics">Physics</button>
           <button data-filter="ml">ML</button>
+          <button data-filter="ee">EE</button>
           <button data-filter="embedded">Embedded</button>
           <button data-filter="robotics">Robotics</button>
         </div>
       </div>
       <div class="project-grid">
-        <article class="project" data-tags="physics">
-          <h3>DOLFINx PDE Gallery</h3>
-          <p>Weak forms for Poisson, heat, and elasticity with solver and PyVista visualization scaffold.</p>
-          <a href="https://github.com/krishnaa423/industry-dolfinx">README</a>
+        <article class="project" data-tags="physics ee">
+          <h3>DOLFINx PN Junction Simulation</h3>
+          <p>Finite-element semiconductor workflow built around Poisson and transport-style equations, aimed at device-scale simulation from a first-principles mindset.</p>
+          <a href="https://github.com/krishnaa423/dolfinx-pn-junction">Repository</a>
         </article>
-        <article class="project" data-tags="physics">
+        <article class="project" data-tags="physics ee">
           <h3>Meep Ring Resonator</h3>
-          <p>FDTD simulation setup for a ring resonator side-coupled to a waveguide.</p>
-          <a href="https://github.com/krishnaa423/industry-meep-ring-resonator">README</a>
+          <p>FDTD modeling of integrated photonics structures, including resonator-waveguide coupling and optics-oriented simulation workflows.</p>
+          <a href="https://github.com/krishnaa423/meep-ring-resonator">Repository</a>
         </article>
         <article class="project" data-tags="physics ml">
           <h3>First-Principles LiF</h3>
-          <p>Plane-wave Hamiltonian scaffold and band plotting for DFT-style workflows.</p>
-          <a href="https://github.com/krishnaa423/industry-first-principles-lif">README</a>
+          <p>Plane-wave Hamiltonian scaffolding and band-structure style analysis for electronic-structure workflows and condensed-matter exploration.</p>
+          <a href="https://github.com/krishnaa423/first-principles-lif">Repository</a>
         </article>
         <article class="project" data-tags="ml">
           <h3>EGNN QM9 Force Model</h3>
-          <p>PyTorch equivariant message-passing model with force-loss training loop.</p>
-          <a href="https://github.com/krishnaa423/industry-egnn-qm9">README</a>
+          <p>Equivariant PyTorch geometric workflow for molecular-property prediction and symmetry-aware scientific machine learning.</p>
+          <a href="https://github.com/krishnaa423/egnn-qm9">Repository</a>
         </article>
-        <article class="project" data-tags="embedded">
-          <h3>MIPS Processor</h3>
-          <p>Single-cycle Verilog CPU with Icarus Verilog self-checking test bench.</p>
-          <a href="https://github.com/krishnaa423/industry-mips-processor">README</a>
-        </article>
-        <article class="project" data-tags="embedded ml">
+        <article class="project" data-tags="embedded ee ml">
           <h3>Matrix-Multiply Accelerator</h3>
-          <p>Tiny signed integer accelerator block with start/done control.</p>
-          <a href="https://github.com/krishnaa423/industry-ai-accelerator">README</a>
+          <p>Compact Verilog AI accelerator exploring datapath structure, control, and hardware-oriented acceleration ideas for ML workloads.</p>
+          <a href="https://github.com/krishnaa423/ai-accelerator-verilog">Repository</a>
         </article>
         <article class="project" data-tags="robotics">
           <h3>ROS 2 TurtleBot Simulation</h3>
-          <p>Docker-oriented Nav2/Gazebo plan with trajectory analysis fallback.</p>
-          <a href="https://github.com/krishnaa423/industry-ros2-turtlebot-sim">README</a>
+          <p>Docker-oriented robotics simulation work connecting Nav2, Gazebo, and trajectory-analysis tooling for autonomous systems experiments.</p>
+          <a href="https://github.com/krishnaa423/ros2-turtlebot-sim">Repository</a>
+        </article>
+        <article class="project" data-tags="physics ml ee">
+          <h3>Theory Compendia</h3>
+          <p>Structured cross-domain theory notes in mathematics, computer science, physics, and electrical engineering designed to show derivation-level thinking and notation discipline.</p>
+          <a href="https://github.com/krishnaa423/physics-theory-notes">Physics</a>
         </article>
       </div>
     </section>
 
-    <section id="resumes" class="section split">
-      <div>
-        <h2>Resume Variants</h2>
-        <p>Targeted LaTeX resumes for software, ML, embedded systems, computational physics, and EE roles.</p>
+    <section id="resumes" class="section">
+      <div class="section-head">
+        <div>
+          <h2>Resume and CV Sets</h2>
+          <p>The public-facing `master` set is the balanced overview. The specialized variants are tuned for role-specific applications.</p>
+        </div>
       </div>
-      <div class="link-list">
-        <a href="https://github.com/krishnaa423/industry-resume/blob/main/software/main.pdf">Software</a>
-        <a href="https://github.com/krishnaa423/industry-resume/blob/main/ml/main.pdf">Machine learning</a>
-        <a href="https://github.com/krishnaa423/industry-resume/blob/main/embedded/main.pdf">Embedded systems</a>
-        <a href="https://github.com/krishnaa423/industry-resume/blob/main/comp_physics/main.pdf">Computational physics</a>
-        <a href="https://github.com/krishnaa423/industry-resume/blob/main/ee/main.pdf">Electrical engineering</a>
+      <div class="resume-panels">
+        <article class="resume-group featured">
+          <h3>Master Set</h3>
+          <p>Best all-around version for broad platforms such as LinkedIn and general outreach.</p>
+          <div class="link-list">
+            <a href="https://github.com/krishnaa423/resume-cv/blob/main/master/resume/main.pdf">Master resume</a>
+            <a href="https://github.com/krishnaa423/resume-cv/blob/main/master/cv/main.pdf">Master CV</a>
+          </div>
+        </article>
+        <article class="resume-group">
+          <h3>Targeted Sets</h3>
+          <p>Role-specific variants with tuned keywords, project selection, and emphasis.</p>
+          <div class="link-list">
+            <a href="https://github.com/krishnaa423/resume-cv/blob/main/comp_physics/resume/main.pdf">Comp physics resume</a>
+            <a href="https://github.com/krishnaa423/resume-cv/blob/main/comp_physics/cv/main.pdf">Comp physics CV</a>
+            <a href="https://github.com/krishnaa423/resume-cv/blob/main/ee/resume/main.pdf">EE resume</a>
+            <a href="https://github.com/krishnaa423/resume-cv/blob/main/ee/cv/main.pdf">EE CV</a>
+            <a href="https://github.com/krishnaa423/resume-cv/blob/main/embedded/resume/main.pdf">Embedded resume</a>
+            <a href="https://github.com/krishnaa423/resume-cv/blob/main/embedded/cv/main.pdf">Embedded CV</a>
+            <a href="https://github.com/krishnaa423/resume-cv/blob/main/ml/resume/main.pdf">ML resume</a>
+            <a href="https://github.com/krishnaa423/resume-cv/blob/main/ml/cv/main.pdf">ML CV</a>
+            <a href="https://github.com/krishnaa423/resume-cv/blob/main/software/resume/main.pdf">Software resume</a>
+            <a href="https://github.com/krishnaa423/resume-cv/blob/main/software/cv/main.pdf">Software CV</a>
+          </div>
+        </article>
       </div>
     </section>
 
     <section id="notes" class="section notes">
       <h2>Theory Notes</h2>
-      <a href="https://github.com/krishnaa423/industry-cs-theory/blob/main/main.pdf">Computer science and ML</a>
-      <a href="https://github.com/krishnaa423/industry-math-theory/blob/main/main.pdf">Mathematics</a>
-      <a href="https://github.com/krishnaa423/industry-physics-theory/blob/main/main.pdf">Physics</a>
-      <a href="https://github.com/krishnaa423/industry-ee-theory/blob/main/main.pdf">Electrical engineering</a>
+      <a href="https://github.com/krishnaa423/cs-theory-notes/blob/main/main.pdf">Computer science and ML</a>
+      <a href="https://github.com/krishnaa423/math-theory-notes/blob/main/main.pdf">Mathematics</a>
+      <a href="https://github.com/krishnaa423/physics-theory-notes/blob/main/main.pdf">Physics</a>
+      <a href="https://github.com/krishnaa423/ee-theory-notes/blob/main/main.pdf">Electrical engineering</a>
     </section>
 
     <section id="experience" class="section timeline">
       <h2>Experience</h2>
-      <div><strong>Yale University</strong><span>PhD research in first-principles self-trapped excitons, MS and MPhil in ECE awarded in 2023, HPC workflows, scientific ML, and embedded systems teaching.</span></div>
-      <div><strong>Probe Technologies / Weatherford</strong><span>ASP/database software, CUDA/OpenGL acoustic logging visualization, C8051 firmware, and Lattice FPGA sensor logging.</span></div>
+      <div><strong>Yale University</strong><span>PhD research in first-principles self-trapped excitons, many-body exciton-phonon theory, semiconductor-relevant simulation, scientific ML, and distributed workflows on Frontier and Perlmutter.</span></div>
+      <div><strong>Probe Technologies / Weatherford</strong><span>Software and embedded engineering across CUDA/OpenGL acoustic logging tools, ASP and SQL-backed engineering systems, FPGA and MCU firmware, and instrumentation-oriented validation.</span></div>
       <div><strong>FindLight</strong><span>Photonics writing for technical audiences.</span></div>
-      <div><strong>Cornell University</strong><span>BA and MEng in Electrical and Computer Engineering; embedded robotic hand project published in Circuit Cellar.</span></div>
+      <div><strong>Cornell University</strong><span>BS and MEng in Electrical and Computer Engineering with embedded systems, robotics, controls, semiconductor, photonics, and advanced design preparation.</span></div>
     </section>
 
     <section id="contact" class="section contact">
       <h2>Contact</h2>
-      <a href="mailto:srikrishnaacareers@gmail.com">srikrishnaacareers@gmail.com</a>
+      <a href="mailto:srikrishnaa.careers@gmail.com">srikrishnaa.careers@gmail.com</a>
       <a href="tel:+15168535663">516-853-5663</a>
+      <a href="https://www.linkedin.com/in/sri-krishnaa-ece-phd">linkedin.com/in/sri-krishnaa-ece-phd</a>
       <a href="https://github.com/krishnaa423">github.com/krishnaa423</a>
       <a href="https://leetcode.com/u/krishnaa42342/">leetcode.com/u/krishnaa42342</a>
       <a href="https://hub.docker.com/u/krishnaa42342">hub.docker.com/u/krishnaa42342</a>
