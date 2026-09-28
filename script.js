@@ -14,11 +14,7 @@ function resize() {
 
 function draw(time) {
   ctx.clearRect(0, 0, w, h);
-  const grad = ctx.createLinearGradient(0, 0, w, h);
-  grad.addColorStop(0, "#eef4ea");
-  grad.addColorStop(0.55, "#f7f8f4");
-  grad.addColorStop(1, "#f2ead7");
-  ctx.fillStyle = grad;
+  ctx.fillStyle = "#f7f8f4";
   ctx.fillRect(0, 0, w, h);
 
   ctx.lineWidth = 1;

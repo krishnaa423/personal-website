@@ -84,9 +84,9 @@ h1 {
   max-width: 820px;
   margin: 0 0 16px;
   font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
-  font-size: clamp(40px, 7vw, 82px);
+  font-size: 72px;
   line-height: 0.98;
-  letter-spacing: -0.03em;
+  letter-spacing: 0;
 }
 
 .hero p {
@@ -126,7 +126,7 @@ h1 {
 
 .overview {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   border-bottom: 1px solid var(--line);
 }
 
@@ -164,7 +164,7 @@ h2 {
   margin: 0 0 20px;
   font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
   font-size: 30px;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
 }
 
 .filters button {
@@ -216,7 +216,7 @@ h2 {
 .resume-group {
   padding: 20px;
   border: 1px solid var(--line);
-  border-radius: 10px;
+  border-radius: 8px;
   background: var(--panel);
   box-shadow: var(--shadow);
 }
@@ -232,9 +232,7 @@ h2 {
   line-height: 1.5;
 }
 
-.resume-group.featured {
-  background: linear-gradient(135deg, #f6f0e0 0%, #ffffff 58%, #eef4ea 100%);
-}
+.resume-group.featured { background: #f2f6ed; }
 
 .notes,
 .contact {
@@ -284,5 +282,10 @@ h2 {
 
   .hero {
     min-height: 82vh;
+  }
+
+  h1 {
+    font-size: 46px;
+    line-height: 1.03;
   }
 }
