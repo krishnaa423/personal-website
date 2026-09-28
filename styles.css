@@ -124,6 +124,15 @@ h1 {
   box-shadow: var(--shadow);
 }
 
+.quick-links a,
+.link-list a {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 12px;
+  line-height: 1.35;
+}
+
 .overview {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
